@@ -77,10 +77,10 @@ body {
 }
 
 .instagram-login {
-    background-color: rgb(28, 82, 163)6;
-    color: white;
+    background-color: rgb(12, 62, 136);
+    color: rgb(255, 255, 255);
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .instagram-logout {
