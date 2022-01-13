@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     display: flex;
@@ -50,10 +50,10 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(12, 12, 12);
 }
 
 .group:nth-child(1) {
@@ -77,14 +77,14 @@ body {
 }
 
 .instagram-login {
-    background-color: rgb(12, 62, 136);
-    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(149, 149, 150);
     padding: 8px;
     border-radius: 5px;
 }
 
 .instagram-logout {
-    color: rgb(28, 82, 163);
+    color: rgb(223, 236, 255);
     margin-top: 1rem;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .link-blue {
-    color: blue;
+    color: rgb(168, 168, 255);
 }
 
 .get-the-app {
@@ -128,12 +128,6 @@ body {
 }
 
 
-/* área para outros dispositivos 
-
-- Arrumar com MOTO G6
-
-*/
-
 
 @media (max-width: 1024px) {
     .instagram-face {
@@ -143,7 +137,7 @@ body {
 
 @media (max-width: 650px) {
     body {
-        background-color: #ffffff;
+        background-color: #000000;
     }
 
     .instagram-face {
