@@ -1,24 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
-
 }
-body{
+
+body {
     width: 100%;
-    min-height: 100%;
-    background-color: rgb(184, 197, 209);
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
 
-.instagram-face{
+.instagram-face {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -26,47 +25,46 @@ body{
     height: 100vh;
 }
 
-.instagram-phone{
+.instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img{
-    height: 40rem;
+.instagram-phone img {
+    height: 50rem;
 }
 
-.instagram-content{ 
+.instagram-content {
     display: flex;
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
-  
 }
 
-.group{
+.group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 200%;
-    padding: 2rem 0;
+    width: 100%;
+    padding: 1.3rem 0;
     border: 1px solid lightgray;
-    }
-
-.group:nth-child(1) {
-    min-height: 20rem;
-    }
-
-.instagram-logo{
-    height: 4.5rem;
 }
 
-.profile-photo{
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,12 +72,12 @@ body{
     overflow: hidden;
 }
 
-.profile-photo img{
+.profile-photo img {
     height: 6rem;
 }
 
 .instagram-login {
-    background-color:rgb(28, 82, 163);
+    background-color: rgb(28, 82, 163)6;
     color: white;
     padding: 8px;
     border-radius: 4px;
@@ -88,66 +86,79 @@ body{
 .instagram-logout {
     color: rgb(28, 82, 163);
     margin-top: 1rem;
-
 }
 
-.not-acount{
+.not-account {
     color: slategray;
 }
 
-.link-blue{
+.link-blue {
     color: blue;
 }
 
 .get-the-app {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 2rem 5;
+    padding: 1.3rem 0;
 }
 
 .download {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;   
+    padding: 1rem;
 }
 
-.app-download{
+.app-download {
     height: 3rem;
     width: 10rem;
     background-size: cover;
 }
 
-.app-download:nth-child(1){
-    background-image: url(./play-store-logo.png);
+.app-download:nth-child(1) {
+    background-image: url('./play-store-logo.png');
 }
 
-.app-download:nth-child(2){
-    background-image: url(./App-store-logo.png);
+.app-download:nth-child(2) {
+    background-image: url('./App-store-logo.png');
 }
 
 
+/* área para outros dispositivos 
 
-@media (max-widht: 1024px) {
+- Arrumar com MOTO G6
+
+*/
+
+
+@media (max-width: 1024px) {
     .instagram-face {
         width: 90%;
     }
 }
 
-@media (max-widht: 650px) {
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
     .instagram-face {
         width: 90%;
     }
-    
+
     .instagram-phone {
         display: none;
     }
 
     .instagram-content {
         width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
     }
 }
